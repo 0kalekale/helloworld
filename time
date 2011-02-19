@@ -2,7 +2,7 @@
 make clean
 echo "compiling"
 echo
-time make
+time make -j8
 echo 
 echo "--- Rust ---"
 echo
