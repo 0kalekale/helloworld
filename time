@@ -1,3 +1,4 @@
+!#/bin/sh
 make clean
 echo "compiling"
 echo
@@ -8,6 +9,10 @@ echo
 time ./bin/hello_rs
 echo "--- C ---"
 echo
-time bin/hello_c
+time ./bin/hello_c
+echo
 echo "--- asm ---"
-time bin/hello_asm
+time ./bin/hello_asm
+echo
+echo "--- python3 ---"
+time python3 ./bin/hello.py
