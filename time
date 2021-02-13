@@ -1,0 +1,13 @@
+make clean
+echo "compiling"
+echo
+time make
+echo 
+echo "--- Rust ---"
+echo
+time ./bin/hello_rs
+echo "--- C ---"
+echo
+time bin/hello_c
+echo "--- asm ---"
+time bin/hello_asm
